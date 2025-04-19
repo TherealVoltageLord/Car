@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    touch-action: none;
+    font-family: 'Arial', sans-serif;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#score-display, #speed-display {
+    position: absolute;
+    color: #e0f7fa;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    background-color: rgba(13, 71, 161, 0.7);
+    border-radius: 5px;
+    z-index: 10;
+}
+
+#score-display {
+    top: 10px;
+    left: 10px;
+}
+
+#speed-display {
+    top: 10px;
+    right: 10px;
+}
+
+/* On-Screen Controls */
+#controls {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.joystick {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    touch-action: none;
+}
+
+.joystick-inner {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+#joystick-left {
+    margin-right: auto;
+}
+
+#joystick-right {
+    margin-left: auto;
+}
+
+#brake-btn {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 0, 0, 0.5);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    touch-action: none;
+    user-select: none;
+}
